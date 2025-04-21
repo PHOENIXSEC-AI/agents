@@ -116,8 +116,8 @@ source .venv/bin/activate
 # Run the initial setup
 crawl4ai-setup
 
-# Run the crawler with default settings
-python web_crawler/crawler.py
+# Run the crawler for demo
+python web_crawler/crawler.py https://news.ycombinator.com/ --config sample_crawler_config.json
 ```
 
 ### Shared Core

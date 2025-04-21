@@ -8,6 +8,7 @@ packages = [{ include = "web_crawler" }]
 python = ">=3.11,<4.0"
 core = {path="../../shared", develop=true}
 crawl4ai = "^0.5.0.post8" 
+click = "^8.1.8"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

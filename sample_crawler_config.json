@@ -1,0 +1,5 @@
+{
+    "site_domain": "news.ycombinator.com",
+    "url_patterns": ["*item?id=*"],
+    "max_pages": 5
+}
