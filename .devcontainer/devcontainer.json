@@ -1,0 +1,21 @@
+{
+    "name": "Workspace Development",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "ms-python.debugpy",
+          "oderwat.indent-rainbow",
+          "christian-kohler.path-intellisense",
+          "donjayamanne.python-environment-manager"
+        ]
+      }
+    },
+    "remoteUser": "vscode",
+    "features": {
+      "ghcr.io/devcontainers-extra/features/poetry:2": {
+        "version": "latest"
+      }
+    }
+  }
