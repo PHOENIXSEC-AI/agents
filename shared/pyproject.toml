@@ -1,8 +1,8 @@
 [project]
-name = "agents-shared"
+name = "core"
 version = "0.1.0"
 description = ""
-packages = [{ include = "agents_shared" }]
+packages = [{ include = "core" }]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<4.0"

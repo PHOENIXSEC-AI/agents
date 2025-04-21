@@ -4,7 +4,7 @@ from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
-from agents_shared.httpx_client import HTTPClientBuilder
+from core.httpx_client import HTTPClientBuilder
 
 from typing import Any, List
 

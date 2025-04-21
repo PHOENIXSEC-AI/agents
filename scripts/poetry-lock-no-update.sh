@@ -29,5 +29,5 @@ do
     poetry env use python${DEFAULT_PYTHON_VERSION}
   fi
   # Use Poetry 2.x commands (no --no-update flag)
-  poetry lock && poetry sync && poetry install
+  poetry lock && poetry install
 done
