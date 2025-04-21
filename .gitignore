@@ -174,3 +174,4 @@ cython_debug/
 .pypirc
 *.sql
 *proxies*.csv
+.tmp_data/
