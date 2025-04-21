@@ -175,3 +175,4 @@ cython_debug/
 *.sql
 *proxies*.csv
 .tmp_data/
+.vscode/
