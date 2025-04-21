@@ -28,5 +28,5 @@ do
   else
     poetry env use python${DEFAULT_PYTHON_VERSION}
   fi
-  poetry update && poetry sync && poetry install
+  poetry update && poetry install
 done

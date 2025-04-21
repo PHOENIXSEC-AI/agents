@@ -173,3 +173,6 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 *.sql
+*proxies*.csv
+.tmp_data/
+.vscode/

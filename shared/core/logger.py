@@ -1,8 +1,8 @@
-from typing import Any, Dict, Optional
-
 import logfire
 
-from agents_shared.env import EnvManager
+from typing import Any, Dict, Optional
+
+from core.env import EnvManager
 
 def configure_logger(
     service_name: Optional[str] = None,

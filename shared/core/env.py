@@ -1,6 +1,6 @@
 import os
 from enum import Enum
-from typing import Optional
+from typing import Optional, Tuple
 from dotenv import load_dotenv
 
 
@@ -89,6 +89,25 @@ class EnvManager:
         """Check if current environment is production"""
         return cls.get_current_environment() == Environment.PRODUCTION
 
+    @staticmethod
+    def create_dir(dir_name:str) -> Tuple[bool, str]:
+        """
+        Safely create a directory if it doesn't exist.
+        
+        Args:
+            dir_name: The path of the directory to create
+            
+        Returns:
+            A tuple containing (success, error_message):
+                - success: True if directory exists or was created successfully, False otherwise
+                - error_message: Empty string on success, exception message on failure
+        """
+        try:
+            if not os.path.exists(dir_name):
+                os.makedirs(dir_name, exist_ok=True)
+            return True, ""
+        except Exception as ex:
+            return False, str(ex)
 
 # Initialize environment variables from .env file by default
 EnvManager.initialize()
